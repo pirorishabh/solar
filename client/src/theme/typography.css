@@ -1,0 +1,30 @@
+:root {
+  /* Font families */
+  --font-sans: "Space Grotesk", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  /* Modern Font sizes (rem) */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 2rem;
+  --text-4xl: 2.5rem;
+  --text-5xl: 3.5rem;
+}
+
+/* Utility classes for typography */
+.body-sm { font-family: var(--font-sans); font-size: var(--text-sm); line-height: 1.5; }
+.body-base { font-family: var(--font-sans); font-size: var(--text-base); line-height: 1.5; }
+
+/* CLEAN MODERN HEADINGS */
+.heading-xl { font-family: var(--font-sans); font-size: clamp(2rem, 4vw, 3.25rem); font-weight: 600; line-height: 1.05; letter-spacing: -0.045em; }
+.heading-lg { font-family: var(--font-sans); font-size: var(--text-3xl); font-weight: 600; line-height: 1.15; letter-spacing: -0.035em; }
+.heading-md { font-family: var(--font-sans); font-size: var(--text-xl); font-weight: 600; line-height: 1.25; letter-spacing: -0.02em; }
+
+/* CLEAN TELEMETRY (Not full uppercase everywhere) */
+.telemetry { font-family: var(--font-sans); font-size: var(--text-sm); font-weight: 500; color: var(--text-secondary); }
+.telemetry-lg { font-family: var(--font-sans); font-size: var(--text-base); font-weight: 600; color: var(--text-primary); }
+.mono { font-family: var(--font-mono); }
